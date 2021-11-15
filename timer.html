@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <title>Главная</title>
+</head>
+<body>
+<header class="bg-dark">
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Практика</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Слайдер</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="link.html">Ссылка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="timer.html">Таймер</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search"  aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Поиск</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container mt-5" style="min-height: 60vh">
+        <div class="timer row">
+            <div class="col-2">
+
+                <h1>Таймер</h1>
+                <div class="inputs">
+                    <label for="hours">Часы</label><input class="form-control mt-2" type="number" id="hours">
+                    <label for="minutes">Минуты</label><input class="form-control mt-2" type="number" id="minutes">
+                    <label for="seconds">Секунды</label><input class="form-control mt-2" type="number" id="seconds">
+
+                    <button type="button" class="btn btn-success mt-3" id="start" onclick="start()">Запустить</button>
+
+                </div>
+
+                <div class="countdown">
+                    <h1 class="time"></h1>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</main>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
